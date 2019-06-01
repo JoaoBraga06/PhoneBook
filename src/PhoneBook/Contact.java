@@ -1,16 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package PhoneBook;
 
 import Enums.TypeId;
 import Exceptions.*;
 
 /**
- *
- * @author joaop
+ * <h3>
+ * ESTG - Escola Superior de Tecnologia e Gestão<br>
+ * IPP - Instituto Politécnico do Porto <br>
+ * LEI - Licenciatura em Engenharia Informática<br>
+ * PP - Paradigmas de Programação<br>
+ * </h3>
+ * <p>
+ * <strong>Descrição: </strong><br>
+ * Class that represents one contact
+ * </p>
  */
 public class Contact {
     /**
@@ -129,6 +132,16 @@ public class Contact {
             this.phoneNumber=phoneNumber;
         
         return IsValid;
+    }
+    
+    /**
+     * Checks if there is the contact has the same phone number
+     * 
+     * @param c Contact
+     * @return If the phone number is equal
+     */
+    public boolean equalsContact(Contact c){
+        return this.phoneNumber==c.phoneNumber;
     }
 
     /**
